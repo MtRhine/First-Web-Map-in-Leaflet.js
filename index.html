@@ -12,7 +12,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"></script>
 		<script>
 		  //initialize the map         
-		  const map = L.map('map').setView([52.1007, 5.6462], 10);
+		  const map = L.map('map').setView([52.10079, 5.64621], 10);
 		  const hash = new L.Hash(map);
 		
 		  //Create baselayer - tiles         
@@ -23,15 +23,16 @@
 		  let forum = L.marker([ 51.98531, 5.66361])
 		  forum.addTo(map);
 		  let Dijkgraaf = L.marker([ 51.9804, 5.65670])
-		  dijkgraaf.addTo(map);
+		  Dijkgraaf.addTo(map);
 		  let Thuis = L.marker([ 51.46726, 3.60986])
-		  thuis.addTo(map);
+		  Thuis.addTo(map);
+		  
 		  let popup1 = "Forum";
 			forum.bindPopup(popup1); 
 		  let popup2 = "Dijkgraaf";
-			atlas.bindPopup(popup2); 
+			Dijkgraaf.bindPopup(popup2); 
 		  let popup3 = "Thuis";
-			uni.bindPopup(popup3); 
+			Thuis.bindPopup(popup3); 
 		  let circle =  L.circle([51.46726, 3.60986], 500, {
 			color: 'red',
 			fillColor: '#f03',
