@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My first leaflet map</title>
+        <title>My places</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 		<link rel="stylesheet" href="main.css"/>
     </head>
@@ -12,7 +12,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"></script>
 		<script>
 		  //initialize the map         
-		  const map = L.map('map').setView([51.9741, 5.6688], 15);
+		  const map = L.map('map').setView([52.10079, 5.64621], 7);
 		  const hash = new L.Hash(map);
 		
 		  //Create baselayer - tiles         
@@ -22,17 +22,17 @@
 			});
 		  let forum = L.marker([ 51.98531, 5.66361])
 		  forum.addTo(map);
-		  let atlas = L.marker([ 51.9864, 5.66801])
+		  let Dijkgraaf = L.marker([ 51.9804, 5.65670])
 		  atlas.addTo(map);
-		  let uni = L.marker([ 51.98514, 5.66647])
+		  let Thuis = L.marker([ 51.46726, 3.60986])
 		  uni.addTo(map);
 		  let popup1 = "Forum";
 			forum.bindPopup(popup1); 
-		  let popup2 = "Atlas";
+		  let popup2 = "Dijkgraaf";
 			atlas.bindPopup(popup2); 
-		  let popup3 = "uni";
+		  let popup3 = "Thuis";
 			uni.bindPopup(popup3); 
-		  let circle =  L.circle([51.98531, 5.66361], 500, {
+		  let circle =  L.circle([51.46726, 3.60986], 500, {
 			color: 'red',
 			fillColor: '#f03',
 			fillOpacity: 0.5
