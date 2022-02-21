@@ -12,7 +12,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"></script>
 		<script>
 		  //initialize the map         
-		  const map = L.map('map').setView([52.10079, 5.64621], 7);
+		  const map = L.map('map').setView([52.1007, 5.6462], 10);
 		  const hash = new L.Hash(map);
 		
 		  //Create baselayer - tiles         
@@ -23,9 +23,9 @@
 		  let forum = L.marker([ 51.98531, 5.66361])
 		  forum.addTo(map);
 		  let Dijkgraaf = L.marker([ 51.9804, 5.65670])
-		  atlas.addTo(map);
+		  dijkgraaf.addTo(map);
 		  let Thuis = L.marker([ 51.46726, 3.60986])
-		  uni.addTo(map);
+		  thuis.addTo(map);
 		  let popup1 = "Forum";
 			forum.bindPopup(popup1); 
 		  let popup2 = "Dijkgraaf";
